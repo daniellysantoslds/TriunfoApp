@@ -161,7 +161,7 @@
                                                                         <buttonConfiguration key="configuration" style="plain" title="See all"/>
                                                                     </button>
                                                                 </subviews>
-                                                                <color key="backgroundColor" red="0.56862745100000001" green="0.36862745099999999" blue="0.87058823529999996" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <color key="backgroundColor" systemColor="systemYellowColor"/>
                                                             </stackView>
                                                         </subviews>
                                                         <color key="backgroundColor" systemColor="systemBrownColor"/>
@@ -184,6 +184,13 @@
                                                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                         </collectionViewFlowLayout>
+                                                        <label key="backgroundView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="GGq-OM-7Ip">
+                                                            <rect key="frame" x="0.0" y="0.0" width="413.5" height="318"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
                                                         <cells>
                                                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="u9o-Lz-AKD">
                                                                 <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
