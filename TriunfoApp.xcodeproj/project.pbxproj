@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		930B559C287C45EC000EE75A /* PopularCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930B559B287C45EC000EE75A /* PopularCollectionViewCell.swift */; };
+		930B559E287C4697000EE75A /* NowPlayingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930B559D287C4697000EE75A /* NowPlayingCollectionViewCell.swift */; };
 		93D96A9428735F6E00C0093E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D96A9328735F6E00C0093E /* AppDelegate.swift */; };
 		93D96A9628735F6E00C0093E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D96A9528735F6E00C0093E /* SceneDelegate.swift */; };
 		93D96A9828735F6E00C0093E /* FeaturedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D96A9728735F6E00C0093E /* FeaturedViewController.swift */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		930B559B287C45EC000EE75A /* PopularCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularCollectionViewCell.swift; sourceTree = "<group>"; };
+		930B559D287C4697000EE75A /* NowPlayingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowPlayingCollectionViewCell.swift; sourceTree = "<group>"; };
 		93D96A9028735F6E00C0093E /* TriunfoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TriunfoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93D96A9328735F6E00C0093E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		93D96A9528735F6E00C0093E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +41,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		930B559F287C46F7000EE75A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				93D96A9728735F6E00C0093E /* FeaturedViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		930B55A0287C4730000EE75A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				93D96A9E28735F7000C0093E /* LaunchScreen.storyboard */,
+				93D96A9928735F6E00C0093E /* Main.storyboard */,
+				930B559D287C4697000EE75A /* NowPlayingCollectionViewCell.swift */,
+				930B559B287C45EC000EE75A /* PopularCollectionViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		930B55A1287C48A9000EE75A /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				93D96A9C28735F7000C0093E /* Assets.xcassets */,
+				93D96AA128735F7000C0093E /* Info.plist */,
+			);
+			name = SupportingFiles;
+			sourceTree = "<group>";
+		};
 		93D96A8728735F6E00C0093E = {
 			isa = PBXGroup;
 			children = (
@@ -58,11 +90,9 @@
 			children = (
 				93D96A9328735F6E00C0093E /* AppDelegate.swift */,
 				93D96A9528735F6E00C0093E /* SceneDelegate.swift */,
-				93D96A9728735F6E00C0093E /* FeaturedViewController.swift */,
-				93D96A9928735F6E00C0093E /* Main.storyboard */,
-				93D96A9C28735F7000C0093E /* Assets.xcassets */,
-				93D96A9E28735F7000C0093E /* LaunchScreen.storyboard */,
-				93D96AA128735F7000C0093E /* Info.plist */,
+				930B55A1287C48A9000EE75A /* SupportingFiles */,
+				930B559F287C46F7000EE75A /* Controllers */,
+				930B55A0287C4730000EE75A /* View */,
 			);
 			path = TriunfoApp;
 			sourceTree = "<group>";
@@ -138,6 +168,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				930B559E287C4697000EE75A /* NowPlayingCollectionViewCell.swift in Sources */,
+				930B559C287C45EC000EE75A /* PopularCollectionViewCell.swift in Sources */,
 				93D96A9828735F6E00C0093E /* FeaturedViewController.swift in Sources */,
 				93D96A9428735F6E00C0093E /* AppDelegate.swift in Sources */,
 				93D96A9628735F6E00C0093E /* SceneDelegate.swift in Sources */,
