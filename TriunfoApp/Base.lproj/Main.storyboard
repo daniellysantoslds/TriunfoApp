@@ -12,7 +12,7 @@
         <!--Featured-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController title="Featured" id="BYZ-38-t0r" customClass="ViewController" customModule="TriunfoApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Featured" id="BYZ-38-t0r" customClass="FeaturedViewController" customModule="TriunfoApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="413" height="1202"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -166,20 +166,20 @@
                                                                                 <constraint firstAttribute="width" constant="55" id="Zqq-hK-dFN"/>
                                                                             </constraints>
                                                                         </imageView>
-                                                                        <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="zrH-ra-yFJ">
-                                                                            <rect key="frame" x="71" y="20" width="99.5" height="49"/>
+                                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="zrH-ra-yFJ">
+                                                                            <rect key="frame" x="71" y="20" width="180" height="82"/>
                                                                             <subviews>
                                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loucura" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JV4-GS-C3n">
-                                                                                    <rect key="frame" x="0.0" y="0.0" width="99.5" height="20.5"/>
+                                                                                    <rect key="frame" x="0.0" y="0.0" width="180" height="20.5"/>
                                                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                                     <nil key="textColor"/>
                                                                                     <nil key="highlightedColor"/>
                                                                                 </label>
                                                                                 <stackView opaque="NO" contentMode="scaleToFill" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="MVA-0T-biw">
-                                                                                    <rect key="frame" x="0.0" y="28.5" width="99.5" height="20.5"/>
+                                                                                    <rect key="frame" x="0.0" y="28.5" width="180" height="53.5"/>
                                                                                     <subviews>
                                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="&lt;Title Label&gt;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kqc-hp-thr">
-                                                                                            <rect key="frame" x="0.0" y="0.0" width="99.5" height="20.5"/>
+                                                                                            <rect key="frame" x="0.0" y="0.0" width="180" height="20.5"/>
                                                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                                             <nil key="textColor"/>
                                                                                             <nil key="highlightedColor"/>
@@ -190,8 +190,12 @@
                                                                         </stackView>
                                                                     </subviews>
                                                                     <constraints>
+                                                                        <constraint firstItem="zrH-ra-yFJ" firstAttribute="leading" secondItem="fnQ-Tg-ufr" secondAttribute="trailing" constant="16" id="CpB-6N-sGP"/>
                                                                         <constraint firstItem="fnQ-Tg-ufr" firstAttribute="leading" secondItem="jKi-52-ZwA" secondAttribute="leading" id="FWF-Ry-cMO"/>
                                                                         <constraint firstItem="fnQ-Tg-ufr" firstAttribute="centerY" secondItem="jKi-52-ZwA" secondAttribute="centerY" id="ZBH-xt-LRg"/>
+                                                                        <constraint firstAttribute="bottom" secondItem="zrH-ra-yFJ" secondAttribute="bottom" constant="12" id="c3W-cD-CT6"/>
+                                                                        <constraint firstAttribute="trailing" secondItem="zrH-ra-yFJ" secondAttribute="trailing" id="d0O-a9-85z"/>
+                                                                        <constraint firstItem="zrH-ra-yFJ" firstAttribute="top" secondItem="jKi-52-ZwA" secondAttribute="top" constant="20" id="pXJ-7W-H5t"/>
                                                                     </constraints>
                                                                 </collectionViewCellContentView>
                                                             </collectionViewCell>
@@ -281,14 +285,12 @@
                     </view>
                     <navigationItem key="navigationItem" title="Featured" id="2gQ-kJ-LRR"/>
                     <size key="freeformSize" width="413" height="1202"/>
+                    <connections>
+                        <outlet property="nowplayingCollectionView" destination="zgd-oQ-TU7" id="AM2-fK-5zN"/>
+                        <outlet property="poupularCollectionView" destination="5SA-Ri-k0d" id="X8B-Gf-KFH"/>
+                        <outlet property="upcomingCollectionView" destination="mJj-Qm-MH3" id="V3z-MU-HO0"/>
+                    </connections>
                 </viewController>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="RD2-wk-kN8">
-                    <rect key="frame" x="0.0" y="0.0" width="175" height="19"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1577.536231884058" y="264.50892857142856"/>
