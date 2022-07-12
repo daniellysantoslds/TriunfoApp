@@ -10,6 +10,7 @@ import UIKit
 class FeaturedViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
     
     
+    let filmes = ["Titulo 1", "" ]
     
     @IBOutlet weak var nowplayingCollectionView: UICollectionView!
     @IBOutlet weak var popularCollectionView: UICollectionView!
