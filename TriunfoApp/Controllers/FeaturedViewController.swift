@@ -10,7 +10,8 @@ import UIKit
 class FeaturedViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
     
     
-    let filmes = ["Titulo 1", "" ]
+    let filmes: [Movie] = [Movie(title: "The office", poster: "theoffice", backdrop: "theoffice2", releaseDate: "1999")]
+    let ints = [1, 2, 5, 0]
     
     @IBOutlet weak var nowplayingCollectionView: UICollectionView!
     @IBOutlet weak var popularCollectionView: UICollectionView!
