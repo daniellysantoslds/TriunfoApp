@@ -207,7 +207,7 @@
                                                                 </collectionViewCellContentView>
                                                                 <connections>
                                                                     <outlet property="dateLabel" destination="kqc-hp-thr" id="Y2e-9s-hL6"/>
-                                                                    <outlet property="image" destination="fnQ-Tg-ufr" id="VdZ-Em-B7r"/>
+                                                                    <outlet property="imageView" destination="fnQ-Tg-ufr" id="VdZ-Em-B7r"/>
                                                                     <outlet property="titleLabel" destination="JV4-GS-C3n" id="lS9-Ou-ezS"/>
                                                                 </connections>
                                                             </collectionViewCell>

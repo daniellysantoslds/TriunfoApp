@@ -44,7 +44,7 @@ extension FeaturedViewController{
         
         cell?.titleLabel.text = nowPlayingMovies[indexPath.item].title
         cell?.dateLabel.text = nowPlayingMovies[indexPath.item].releaseDate
-        cell?.image.image =  UIImage(named: nowPlayingMovies[indexPath.item].poster)
+        cell?.imageView.image =  UIImage(named: nowPlayingMovies[indexPath.item].poster)
         
         return cell ?? NowPlayingCollectionViewCell()
     }
@@ -52,7 +52,7 @@ extension FeaturedViewController{
     
     
     
-//    fileprivate func makeUpComingCell(_ indexPath: IndexPath) -> UICollectionViewCell {
+//    fileprivate func makeUpComingCell(_ indexPath: IndexPath) -> UpComingCollectionViewCell {
 //        let cell = upcomingCollectionView.dequeueReusableCell(withReuseIdentifier: "upComingCell", for: indexPath) as? UpcomingCollectionViewCell
 //
 //        cell?.titleLabel.text = upcomingMovies[indexPath.item].title
@@ -61,7 +61,7 @@ extension FeaturedViewController{
 //
 //        return cell ?? UICollectionViewCell()
 //    }
-//    
+// lembrar de atualizar cin as anteriores
     
     
      
@@ -73,12 +73,14 @@ extension FeaturedViewController{
         if collectionView == self.popularCollectionView{
 
             return makePopularCell(indexPath)
+            
         } else if collectionView == self.nowplayingCollectionView{
             return makeNowPlayingCell(indexPath)
-
-            } else{
-                return UICollectionViewCell()
-            }
+            
+        } else {
+            return UICollectionViewCell()
+    }
 
 }
+
 }

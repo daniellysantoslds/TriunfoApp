@@ -14,7 +14,7 @@ class NowPlayingCollectionViewCell: UICollectionViewCell {
 
     
     
-    @IBOutlet var image: UIImageView!
+    @IBOutlet var imageView: UIImageView!
     
     
    // @IBOutlet var image: UIImageView!
