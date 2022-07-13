@@ -14,7 +14,7 @@ class UpcomingCollectionViewCell{
     
     @IBOutlet var date: UILabel!
     
-    
+    //atualizar e configurar o codigo de acordo com as outras views 
 }
 
 

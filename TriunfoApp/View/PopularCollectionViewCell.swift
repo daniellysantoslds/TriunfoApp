@@ -11,8 +11,9 @@ class PopularCollectionViewCell: UICollectionViewCell {
    
     
     
-    @IBOutlet weak var image: UIImageView!
+    static let cellIdentifier = "popularCell"
     
+    @IBOutlet weak var imageView: UIImageView!
     
     @IBOutlet weak var title: UILabel!
     

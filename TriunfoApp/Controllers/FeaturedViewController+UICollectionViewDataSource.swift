@@ -28,25 +28,25 @@ extension FeaturedViewController{
         
     }
     
-    fileprivate func makePopularCell(_ indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = popularCollectionView.dequeueReusableCell(withReuseIdentifier: "popularCell", for: indexPath) as? PopularCollectionViewCell
+    fileprivate func makePopularCell(_ indexPath: IndexPath) -> PopularCollectionViewCell {
+        let cell = popularCollectionView.dequeueReusableCell(withReuseIdentifier: PopularCollectionViewCell.cellIdentifier, for: indexPath) as? PopularCollectionViewCell
         
         
         cell?.title.text = popularMovies[indexPath.item].title
-        cell?.image.image = UIImage(named: popularMovies[indexPath.item].backdrop)
+        cell?.imageView.image = UIImage(named: popularMovies[indexPath.item].backdrop)
         
         
-        return cell ??  UICollectionViewCell()
+        return cell ??  PopularCollectionViewCell()
     }
     
-    fileprivate func makeNowPlayingCell(_ indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = nowplayingCollectionView.dequeueReusableCell(withReuseIdentifier: "nowPlayingCell", for: indexPath) as? NowPlayingCollectionViewCell
+    fileprivate func makeNowPlayingCell(_ indexPath: IndexPath) -> NowPlayingCollectionViewCell {
+        let cell = nowplayingCollectionView.dequeueReusableCell(withReuseIdentifier: NowPlayingCollectionViewCell.cellIdentifier, for: indexPath) as? NowPlayingCollectionViewCell
         
         cell?.titleLabel.text = nowPlayingMovies[indexPath.item].title
         cell?.dateLabel.text = nowPlayingMovies[indexPath.item].releaseDate
         cell?.image.image =  UIImage(named: nowPlayingMovies[indexPath.item].poster)
         
-        return cell ?? UICollectionViewCell()
+        return cell ?? NowPlayingCollectionViewCell()
     }
     
     
@@ -61,10 +61,10 @@ extension FeaturedViewController{
 //
 //        return cell ?? UICollectionViewCell()
 //    }
+//    
     
     
-    
-    
+     
     
     
     

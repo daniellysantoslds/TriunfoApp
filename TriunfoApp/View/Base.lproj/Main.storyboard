@@ -100,7 +100,7 @@
                                                                 </collectionViewCellContentView>
                                                                 <size key="customSize" width="200" height="140"/>
                                                                 <connections>
-                                                                    <outlet property="image" destination="UYg-fD-ZaT" id="NRh-pk-lkg"/>
+                                                                    <outlet property="imageView" destination="UYg-fD-ZaT" id="NRh-pk-lkg"/>
                                                                     <outlet property="title" destination="1HM-qP-b0h" id="mVz-fE-jBR"/>
                                                                 </connections>
                                                             </collectionViewCell>
@@ -260,7 +260,7 @@
                                                             <inset key="sectionInset" minX="8" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                         </collectionViewFlowLayout>
                                                         <cells>
-                                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="u9o-Lz-AKD">
+                                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="upComingCell" id="u9o-Lz-AKD">
                                                                 <rect key="frame" x="8" y="0.0" width="200" height="299"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="iX2-fc-bHf">

@@ -10,6 +10,10 @@ import UIKit
 class NowPlayingCollectionViewCell: UICollectionViewCell {
     
     
+    static let cellIdentifier = "nowPlayingCell"
+
+    
+    
     @IBOutlet var image: UIImageView!
     
     
