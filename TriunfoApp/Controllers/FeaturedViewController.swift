@@ -26,6 +26,8 @@ class FeaturedViewController: UIViewController, UICollectionViewDataSource, UICo
         // Do any additional setup after loading the view.\
         popularCollectionView.delegate = self
         popularCollectionView.dataSource = self
+        nowplayingCollectionView.dataSource = self
+        nowplayingCollectionView.delegate = self
         
         
         nowplayingCollectionView.dataSource = self

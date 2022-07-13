@@ -15,7 +15,14 @@ extension FeaturedViewController{
 
         } else if collectionView == self.nowplayingCollectionView{
             return nowPlayingMovies.count
-        } else {
+        }
+        
+        else if collectionView == self.upcomingCollectionView{
+            return upcomingMovies.count
+        }
+        
+        
+        else {
             return 0
         }
         
@@ -41,6 +48,26 @@ extension FeaturedViewController{
         
         return cell ?? UICollectionViewCell()
     }
+    
+    
+    
+    
+//    fileprivate func makeUpComingCell(_ indexPath: IndexPath) -> UICollectionViewCell {
+//        let cell = upcomingCollectionView.dequeueReusableCell(withReuseIdentifier: "upComingCell", for: indexPath) as? UpcomingCollectionViewCell
+//
+//        cell?.titleLabel.text = upcomingMovies[indexPath.item].title
+//        cell?.date.text = upcomingMovies[indexPath.item].releaseDate
+//        cell?.image.image =  UIImage(named: upcomingMovies[indexPath.item].poster)
+//
+//        return cell ?? UICollectionViewCell()
+//    }
+    
+    
+    
+    
+    
+    
+    
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if collectionView == self.popularCollectionView{
