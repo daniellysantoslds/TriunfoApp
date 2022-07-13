@@ -253,20 +253,59 @@
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="318" id="O55-ff-h8d"/>
                                                         </constraints>
-                                                        <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="VrH-aU-HEs">
-                                                            <size key="itemSize" width="128" height="128"/>
+                                                        <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="VrH-aU-HEs">
+                                                            <size key="itemSize" width="200" height="299"/>
                                                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                            <inset key="sectionInset" minX="8" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                         </collectionViewFlowLayout>
                                                         <cells>
                                                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="u9o-Lz-AKD">
-                                                                <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                                                <rect key="frame" x="8" y="0.0" width="200" height="299"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="iX2-fc-bHf">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="200" height="299"/>
                                                                     <autoresizingMask key="autoresizingMask"/>
+                                                                    <subviews>
+                                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8Yf-gG-fye">
+                                                                            <rect key="frame" x="8" y="8" width="184" height="258"/>
+                                                                            <constraints>
+                                                                                <constraint firstAttribute="width" secondItem="8Yf-gG-fye" secondAttribute="height" multiplier="92:129" id="gpg-uo-qdt"/>
+                                                                            </constraints>
+                                                                        </imageView>
+                                                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="77" translatesAutoresizingMaskIntoConstraints="NO" id="wYT-2x-wyf">
+                                                                            <rect key="frame" x="8" y="270" width="184" height="20.5"/>
+                                                                            <subviews>
+                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TcF-xO-316">
+                                                                                    <rect key="frame" x="0.0" y="0.0" width="73" height="20.5"/>
+                                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                                    <nil key="textColor"/>
+                                                                                    <nil key="highlightedColor"/>
+                                                                                </label>
+                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TLS-l0-l1Q">
+                                                                                    <rect key="frame" x="150" y="0.0" width="34" height="20.5"/>
+                                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                                    <nil key="textColor"/>
+                                                                                    <nil key="highlightedColor"/>
+                                                                                </label>
+                                                                            </subviews>
+                                                                        </stackView>
+                                                                    </subviews>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="trailing" secondItem="8Yf-gG-fye" secondAttribute="trailing" constant="8" id="6V0-K7-ofO"/>
+                                                                        <constraint firstItem="wYT-2x-wyf" firstAttribute="centerX" secondItem="8Yf-gG-fye" secondAttribute="centerX" id="A6W-x9-hMY"/>
+                                                                        <constraint firstItem="wYT-2x-wyf" firstAttribute="top" secondItem="8Yf-gG-fye" secondAttribute="bottom" constant="4" id="PNm-il-NIb"/>
+                                                                        <constraint firstItem="8Yf-gG-fye" firstAttribute="leading" secondItem="iX2-fc-bHf" secondAttribute="leading" constant="8" id="VQx-ZM-mc4"/>
+                                                                        <constraint firstItem="wYT-2x-wyf" firstAttribute="leading" secondItem="8Yf-gG-fye" secondAttribute="leading" id="Xuf-K0-C5B"/>
+                                                                        <constraint firstItem="8Yf-gG-fye" firstAttribute="top" secondItem="iX2-fc-bHf" secondAttribute="top" constant="8" id="esv-6J-swX"/>
+                                                                    </constraints>
                                                                 </collectionViewCellContentView>
+                                                                <size key="customSize" width="200" height="299"/>
+                                                                <connections>
+                                                                    <outlet property="date" destination="TLS-l0-l1Q" id="Xpm-Ix-dlX"/>
+                                                                    <outlet property="image" destination="8Yf-gG-fye" id="gK0-gw-zZj"/>
+                                                                    <outlet property="titleLabel" destination="TcF-xO-316" id="2LX-DU-jvc"/>
+                                                                </connections>
                                                             </collectionViewCell>
                                                         </cells>
                                                     </collectionView>

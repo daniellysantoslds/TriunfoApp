@@ -12,6 +12,7 @@ class FeaturedViewController: UIViewController, UICollectionViewDataSource, UICo
     
     let popularMovies = Movie.popularMovies()
     let nowPlayingMovies = Movie.nowPlayingMovies()
+    let upcomingMovies = Movie.upcomingMovies()
     
     
     
