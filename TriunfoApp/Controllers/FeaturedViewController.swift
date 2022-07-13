@@ -24,8 +24,8 @@ class FeaturedViewController: UIViewController, UICollectionViewDataSource {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.\
-        popularCollectionView.delegate = self
         popularCollectionView.dataSource = self
+        popularCollectionView.delegate = self
         nowplayingCollectionView.dataSource = self
         nowplayingCollectionView.delegate = self
         

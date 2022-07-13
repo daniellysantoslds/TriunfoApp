@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="WNz-Cd-uMH">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
@@ -17,7 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="413" height="1202"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FEF-6s-M7j">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" directionalLockEnabled="YES" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FEF-6s-M7j">
                                 <rect key="frame" x="0.0" y="140" width="413" height="979"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="Eqm-u1-ZaW" userLabel="All stacks">
@@ -338,14 +338,14 @@
                     <size key="freeformSize" width="413" height="1202"/>
                     <connections>
                         <outlet property="nowplayingCollectionView" destination="zgd-oQ-TU7" id="AM2-fK-5zN"/>
-                        <outlet property="popularCollectionView" destination="5SA-Ri-k0d" id="X8B-Gf-KFH"/>
+                        <outlet property="popularCollectionView" destination="5SA-Ri-k0d" id="0m1-fd-Rgp"/>
                         <outlet property="upcomingCollectionView" destination="mJj-Qm-MH3" id="V3z-MU-HO0"/>
-                        <segue destination="n0o-Wx-rv8" kind="show" identifier="detailsSegue" id="C3d-dO-snq"/>
+                        <segue destination="n0o-Wx-rv8" kind="show" identifier="detailsSegue" id="K9r-it-Lef"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1577.536231884058" y="264.50892857142856"/>
+            <point key="canvasLocation" x="1492" y="350"/>
         </scene>
         <!--Details View Controller-->
         <scene sceneID="c8X-ya-Gqr">
@@ -381,11 +381,11 @@
             </objects>
             <point key="canvasLocation" x="-347.82608695652175" y="247.76785714285714"/>
         </scene>
-        <!--Item-->
+        <!--Featured-->
         <scene sceneID="vVi-Yo-yd5">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="kFM-kz-nPP" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" image="film" catalog="system" selectedImage="film.fill" id="qIQ-aF-ezt"/>
+                    <tabBarItem key="tabBarItem" title="Featured" image="film" catalog="system" selectedImage="film.fill" id="qIQ-aF-ezt"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="aMK-ws-tf1">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
