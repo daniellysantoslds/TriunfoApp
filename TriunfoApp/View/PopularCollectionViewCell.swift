@@ -13,15 +13,18 @@ class PopularCollectionViewCell: UICollectionViewCell {
     
     static let cellIdentifier = "popularCell"
     
-    @IBOutlet weak var imageView: UIImageView!
-    
-    @IBOutlet weak var title: UILabel!
+   
     
     
+    @IBOutlet var imageView: UIImageView!
+    @IBOutlet var title: UILabel!
     
     
-   // @IBOutlet var image: UIImageView!
+    
+    
+    
+   //@IBOutlet var image: UIImageView!
     
    // @IBOutlet var title: UILabel!
-    
+    //isso aqui ESTA ERRADO!
 }

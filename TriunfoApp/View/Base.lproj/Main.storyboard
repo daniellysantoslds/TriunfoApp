@@ -100,8 +100,8 @@
                                                                 </collectionViewCellContentView>
                                                                 <size key="customSize" width="200" height="140"/>
                                                                 <connections>
-                                                                    <outlet property="imageView" destination="UYg-fD-ZaT" id="NRh-pk-lkg"/>
-                                                                    <outlet property="title" destination="1HM-qP-b0h" id="mVz-fE-jBR"/>
+                                                                    <outlet property="imageView" destination="UYg-fD-ZaT" id="cPc-93-R6S"/>
+                                                                    <outlet property="title" destination="1HM-qP-b0h" id="MDr-Sw-J0I"/>
                                                                 </connections>
                                                             </collectionViewCell>
                                                         </cells>
@@ -340,11 +340,28 @@
                         <outlet property="nowplayingCollectionView" destination="zgd-oQ-TU7" id="AM2-fK-5zN"/>
                         <outlet property="popularCollectionView" destination="5SA-Ri-k0d" id="X8B-Gf-KFH"/>
                         <outlet property="upcomingCollectionView" destination="mJj-Qm-MH3" id="V3z-MU-HO0"/>
+                        <segue destination="n0o-Wx-rv8" kind="show" identifier="detailsSegue" id="C3d-dO-snq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1577.536231884058" y="264.50892857142856"/>
+        </scene>
+        <!--Details View Controller-->
+        <scene sceneID="c8X-ya-Gqr">
+            <objects>
+                <viewController id="n0o-Wx-rv8" customClass="DetailsViewController" customModule="TriunfoApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CPb-eQ-KUI">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Z7u-T0-4g9"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="wpR-1h-mex"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sRU-G9-g1Z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2525" y="163"/>
         </scene>
         <!--Featured-->
         <scene sceneID="YFQ-S3-pwz">

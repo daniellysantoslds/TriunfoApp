@@ -43,7 +43,8 @@ extension FeaturedViewController{
         let cell = nowplayingCollectionView.dequeueReusableCell(withReuseIdentifier: NowPlayingCollectionViewCell.cellIdentifier, for: indexPath) as? NowPlayingCollectionViewCell
         
         cell?.titleLabel.text = nowPlayingMovies[indexPath.item].title
-        cell?.dateLabel.text = nowPlayingMovies[indexPath.item].releaseDate
+        let year: String = "\(nowPlayingMovies[indexPath.item].releaseDate.prefix(4))"
+        cell?.dateLabel.text = year
         cell?.imageView.image =  UIImage(named: nowPlayingMovies[indexPath.item].poster)
         
         return cell ?? NowPlayingCollectionViewCell()
