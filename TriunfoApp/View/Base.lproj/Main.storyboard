@@ -355,10 +355,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="1202"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lYp-FU-Pgh">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lYp-FU-Pgh">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="1119"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Onh-Ef-bHX">
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Onh-Ef-bHX">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="620.5"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kaB-mH-yYq">
@@ -448,19 +448,37 @@
                                                     <constraint firstAttribute="height" constant="1" id="wK1-Ho-v6Z"/>
                                                 </constraints>
                                             </view>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Overview" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Sl-1n-M2y">
-                                                <rect key="frame" x="0.0" y="561" width="414" height="23"/>
-                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&lt;overview label&gt;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JVY-B8-EDr">
-                                                <rect key="frame" x="0.0" y="600" width="414" height="20.5"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
+                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MWV-00-qAm">
+                                                <rect key="frame" x="0.0" y="561" width="414" height="59.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Overview" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Sl-1n-M2y">
+                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="23"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="&lt;overview label&gt;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JVY-B8-EDr">
+                                                        <rect key="frame" x="16" y="39" width="382" height="20.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="JVY-B8-EDr" firstAttribute="leading" secondItem="MWV-00-qAm" secondAttribute="leading" constant="16" id="AUn-nX-SnF"/>
+                                                    <constraint firstAttribute="bottom" secondItem="JVY-B8-EDr" secondAttribute="bottom" constant="16" id="VLQ-9u-J0j"/>
+                                                    <constraint firstAttribute="trailing" secondItem="JVY-B8-EDr" secondAttribute="trailing" constant="16" id="XXk-Ub-qAv"/>
+                                                </constraints>
+                                            </view>
                                         </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="MWV-00-qAm" secondAttribute="bottom" constant="8" id="8Vi-SV-p4Z"/>
+                                            <constraint firstItem="MWV-00-qAm" firstAttribute="top" secondItem="O9Q-mO-gyS" secondAttribute="bottom" constant="16" id="BlY-Bh-qlr"/>
+                                            <constraint firstItem="MWV-00-qAm" firstAttribute="leading" secondItem="Onh-Ef-bHX" secondAttribute="leading" constant="16" id="FQ2-Mn-jgN"/>
+                                            <constraint firstAttribute="trailing" secondItem="MWV-00-qAm" secondAttribute="trailing" constant="16" id="fJw-OM-8rT"/>
+                                        </constraints>
                                     </stackView>
                                 </subviews>
                                 <constraints>
@@ -485,6 +503,13 @@
                     </view>
                     <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="wpR-1h-mex"/>
                     <size key="freeformSize" width="414" height="1202"/>
+                    <connections>
+                        <outlet property="backdropImage" destination="kaB-mH-yYq" id="5hj-e9-fKj"/>
+                        <outlet property="overviewLabel" destination="JVY-B8-EDr" id="ZKs-OH-ajQ"/>
+                        <outlet property="posterImage" destination="fex-js-r6V" id="xYp-7P-VqR"/>
+                        <outlet property="ratingLabel" destination="TDT-5L-MMh" id="33E-iX-6wr"/>
+                        <outlet property="titleLabel" destination="AUr-0f-52Z" id="ZOb-yu-CSV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sRU-G9-g1Z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <view contentMode="scaleToFill" id="gY9-jK-sG5">
