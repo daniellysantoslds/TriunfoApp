@@ -14,7 +14,6 @@ class UpcomingCollectionViewCell{
     
     @IBOutlet var image: UIImageView!
     @IBOutlet var titleLabel: UILabel!
-    
     @IBOutlet var date: UILabel!
     
     //atualizar e configurar o codigo de acordo com as outras views 

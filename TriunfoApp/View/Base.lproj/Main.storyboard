@@ -101,7 +101,7 @@
                                                                 <size key="customSize" width="200" height="140"/>
                                                                 <connections>
                                                                     <outlet property="imageView" destination="UYg-fD-ZaT" id="cPc-93-R6S"/>
-                                                                    <outlet property="title" destination="1HM-qP-b0h" id="MDr-Sw-J0I"/>
+                                                                    <outlet property="titleLabel" destination="1HM-qP-b0h" id="MDr-Sw-J0I"/>
                                                                 </connections>
                                                             </collectionViewCell>
                                                         </cells>
