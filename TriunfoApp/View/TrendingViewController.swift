@@ -6,3 +6,12 @@
 //
 
 import Foundation
+
+
+import UIKit
+
+
+class TrendingViewController: UIViewController{
+    
+    @IBOutlet var trendingTableView: UITableView!
+}
