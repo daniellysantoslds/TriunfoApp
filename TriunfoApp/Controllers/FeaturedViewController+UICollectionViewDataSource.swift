@@ -93,8 +93,8 @@ extension FeaturedViewController{
         let cell = upcomingCollectionView.dequeueReusableCell(withReuseIdentifier: UpcomingCollectionViewCell.cellIdentifier, for: indexPath) as? UpcomingCollectionViewCell
         
         
-        let year: String = "\(nowPlayingMovies[indexPath.item].releaseDate.prefix(4))"
-        let movie = nowPlayingMovies[indexPath.item]
+        let year: String = "\(upcomingMovies[indexPath.item].releaseDate.prefix(4))"
+        let movie = upcomingMovies[indexPath.item]
         cell?.setup(title: movie.title, year: year, image: UIImage())
         
         
@@ -105,7 +105,6 @@ extension FeaturedViewController{
         }
         
 
-        
         return cell ??  UpcomingCollectionViewCell()
     }
     
@@ -124,7 +123,12 @@ extension FeaturedViewController{
         } else if collectionView == self.nowplayingCollectionView{
             return makeNowPlayingCell(indexPath)
             
-        } else {
+        } else if collectionView == self.upcomingCollectionView{
+            return makeUpcomingCell(indexPath)
+            
+        }
+        
+        else {
             return UICollectionViewCell()
         }
         

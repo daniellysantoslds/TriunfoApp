@@ -34,6 +34,10 @@ class FeaturedViewController: UIViewController, UICollectionViewDataSource {
         nowplayingCollectionView.dataSource = self
         nowplayingCollectionView.delegate = self
         
+        upcomingCollectionView.dataSource = self
+        upcomingCollectionView.delegate = self
+        
+        
         
         Task {
             popularMovies = await Movie.popularMoviesAPI()

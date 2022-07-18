@@ -20,14 +20,11 @@ class DetailsViewController: UIViewController {
     var movie: Movie?
     
     
-    
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
-        print(movie)
+        //print(movie)
         
         
         
@@ -36,12 +33,36 @@ class DetailsViewController: UIViewController {
         }
         
         title = movie.title
-        backdropImage.image = UIImage(named: movie.backdropPath)
+        
+        Task{
+            let imageData = await Movie.dowloadImageData(withPath: movie.backdropPath)
+            let image = UIImage(data: imageData) ?? UIImage()
+            backdropImage.image = image
+        }
+        
         titleLabel.text = movie.title
-        posterImage.image = UIImage(named: movie.posterPath)
+        
+        
+        
+        Task{
+            let imageData = await Movie.dowloadImageData(withPath: movie.posterPath)
+            let image = UIImage(data: imageData) ?? UIImage()
+            posterImage.image = image
+        }
+        
+        
         ratingLabel.text = "Rating: \(movie.voteAverage)/10"
         overviewLabel.text = movie.overview
         
+        
+        
+        
+//        backdropImage.image = UIImage(named: movie.backdropPath)
+//        titleLabel.text = movie.title
+//        posterImage.image = UIImage(named: movie.posterPath)
+//        ratingLabel.text = "Rating: \(movie.voteAverage)/10"
+//        overviewLabel.text = movie.overview
+//
         
         
     }

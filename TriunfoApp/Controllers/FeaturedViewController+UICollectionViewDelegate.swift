@@ -17,7 +17,7 @@ extension FeaturedViewController: UICollectionViewDelegate{
         if collectionView == popularCollectionView {
             movie = popularMovies[indexPath.item]
         }
-        else if collectionView == upcomingCollectionView {
+        else if collectionView == nowplayingCollectionView {
             print("filme da now")
             movie = nowPlayingMovies[indexPath.item]
         } else  {
