@@ -76,11 +76,7 @@ extension FeaturedViewController{
         
         
 
-       
-        cell?.setup(title: nowPlayingMovies[indexPath.item].title,
-                        year: year,
-                    image: UIImage(named: nowPlayingMovies[indexPath.item].posterPath) ?? UIImage())
-        
+
         
         
         
@@ -90,18 +86,6 @@ extension FeaturedViewController{
     
     
     
-    //    fileprivate func makeUpComingCell(_ indexPath: IndexPath) -> UpComingCollectionViewCell {
-    //        let cell = upcomingCollectionView.dequeueReusableCell(withReuseIdentifier: "upComingCell", for: indexPath) as? UpcomingCollectionViewCell
-    //
-    //        cell?.titleLabel.text = upcomingMovies[indexPath.item].title
-    //        cell?.date.text = upcomingMovies[indexPath.item].releaseDate
-    //        cell?.image.image =  UIImage(named: upcomingMovies[indexPath.item].poster)
-    //
-    //        return cell ?? UICollectionViewCell()
-    //    }
-    // lembrar de atualizar cin as anteriores
-    
-    
     
     //configurando upcoming
     
@@ -109,15 +93,15 @@ extension FeaturedViewController{
         let cell = upcomingCollectionView.dequeueReusableCell(withReuseIdentifier: UpcomingCollectionViewCell.cellIdentifier, for: indexPath) as? UpcomingCollectionViewCell
         
         
+        let year: String = "\(nowPlayingMovies[indexPath.item].releaseDate.prefix(4))"
+        let movie = nowPlayingMovies[indexPath.item]
+        cell?.setup(title: movie.title, year: year, image: UIImage())
         
-        let movie = upcomingMovies[indexPath.item]
-        cell?.setup(title: movie.title, image: UIImage())
-
         
-        Task {
-            let imageData = await Movie.dowloadImageData(withPath: movie.backdropPath)
+        Task{
+            let imageData = await Movie.dowloadImageData(withPath: movie.posterPath)
             let imagem: UIImage = UIImage(data: imageData) ?? UIImage()
-            cell?.setup(title: movie.title, image: imagem)
+            cell?.setup(title: movie.title, year: year, image: imagem)
         }
         
 

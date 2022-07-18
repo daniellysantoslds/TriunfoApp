@@ -15,11 +15,14 @@ extension FeaturedViewController: UICollectionViewDelegate{
         let movie: Movie
         
         if collectionView == popularCollectionView {
-            print("filme da popular")
             movie = popularMovies[indexPath.item]
-        } else {
+        }
+        else if collectionView == upcomingCollectionView {
             print("filme da now")
             movie = nowPlayingMovies[indexPath.item]
+        } else  {
+            print("pegou")
+            movie = upcomingMovies[indexPath.item]
         }
         self.performSegue(withIdentifier: "detailsSegue", sender: movie)
     }

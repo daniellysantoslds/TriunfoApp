@@ -302,8 +302,8 @@
                                                                 </collectionViewCellContentView>
                                                                 <size key="customSize" width="200" height="299"/>
                                                                 <connections>
-                                                                    <outlet property="date" destination="TLS-l0-l1Q" id="Xpm-Ix-dlX"/>
-                                                                    <outlet property="image" destination="8Yf-gG-fye" id="gK0-gw-zZj"/>
+                                                                    <outlet property="dateLabel" destination="TLS-l0-l1Q" id="Xpm-Ix-dlX"/>
+                                                                    <outlet property="imageView" destination="8Yf-gG-fye" id="gK0-gw-zZj"/>
                                                                     <outlet property="titleLabel" destination="TcF-xO-316" id="2LX-DU-jvc"/>
                                                                 </connections>
                                                             </collectionViewCell>

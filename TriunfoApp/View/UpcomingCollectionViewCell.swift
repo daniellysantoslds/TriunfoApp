@@ -9,12 +9,19 @@ import UIKit
 
 class UpcomingCollectionViewCell: UICollectionViewCell{
     
-    //    static let cellIdentifier = "upcomingCell"
+    static let cellIdentifier = "upcomingCell"
 
     
-    @IBOutlet var image: UIImageView!
+    @IBOutlet var imageView: UIImageView!
     @IBOutlet var titleLabel: UILabel!
-    @IBOutlet var date: UILabel!
+    @IBOutlet var dateLabel: UILabel!
+    
+    func setup(title: String, year: String, image:UIImage){
+        titleLabel.text = title
+        dateLabel.text = year
+        imageView.image = image
+    }
+    
     
     //atualizar e configurar o codigo de acordo com as outras views 
 }
