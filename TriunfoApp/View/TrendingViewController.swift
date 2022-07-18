@@ -11,7 +11,7 @@ import Foundation
 import UIKit
 
 
-class TrendingViewController: UIViewController{
+class TrendingViewController: UIViewController {
     
     var trendingDayMovies: [Movie] = []
 

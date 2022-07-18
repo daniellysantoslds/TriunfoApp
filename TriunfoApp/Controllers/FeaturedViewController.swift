@@ -59,9 +59,6 @@ class FeaturedViewController: UIViewController, UICollectionViewDataSource {
         }
         
 
-        
-        
-        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
