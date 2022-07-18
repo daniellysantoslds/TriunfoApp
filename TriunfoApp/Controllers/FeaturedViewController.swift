@@ -11,8 +11,8 @@ class FeaturedViewController: UIViewController, UICollectionViewDataSource {
     
     
     var popularMovies: [Movie] = [] //Movie.popularMovies()
-    let nowPlayingMovies = Movie.nowPlayingMovies()
-    let upcomingMovies = Movie.upcomingMovies()
+    var nowPlayingMovies: [Movie] = []//nowPlayingMovies()
+    let upcomingMovies: [Movie] = [] //upcomingMovies()
     
     
     
@@ -38,6 +38,11 @@ class FeaturedViewController: UIViewController, UICollectionViewDataSource {
         Task {
             popularMovies = await Movie.popularMoviesAPI()
             self.popularCollectionView.reloadData()
+        }
+        
+        Task {
+            nowPlayingMovies = await Movie.nowPlayingMoviesAPI()
+            self.nowplayingCollectionView.reloadData()
         }
         
 

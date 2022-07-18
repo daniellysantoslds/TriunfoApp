@@ -7,7 +7,7 @@
 
 import UIKit
 
-class UpcomingCollectionViewCell{
+class UpcomingCollectionViewCell: UICollectionViewCell{
     
     //    static let cellIdentifier = "upcomingCell"
 

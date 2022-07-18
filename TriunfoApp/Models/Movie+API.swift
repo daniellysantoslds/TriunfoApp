@@ -9,6 +9,8 @@ import Foundation
 
 extension Movie {
     
+    
+    
     static let urlComponentes = URLComponents(string: "https://api.themoviedb.org/")!
     
     static func popularMoviesAPI() async -> [Movie] {
@@ -38,6 +40,34 @@ extension Movie {
         return []
         
     }
+    
+    
+    
+    
+    
+    // MARK: - Dowload de imagens
+    static func dowloadImageData(withPath : String) async -> Data {
+        let urlString = "https://image.tmdb.org/t/p/w780\(withPath)"
+        let url: URL = URL(string: urlString)!
+        
+        
+        
+        let session = URLSession.shared
+        session.configuration.requestCachePolicy = .returnCacheDataElseLoad
+        
+        do {
+            let (imageData, response) = try await session.data(from: url)
+            
+            return imageData
+            
+        } catch{
+            print(error)
+        }
+        
+        
+        return Data()
+    }
+    
     
     //repetir esse processopara as outras cells
     
