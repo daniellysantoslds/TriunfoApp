@@ -39,6 +39,10 @@ class FeaturedViewController: UIViewController, UICollectionViewDataSource {
         
         
         
+        
+        
+        
+        
         Task {
             popularMovies = await Movie.popularMoviesAPI()
             self.popularCollectionView.reloadData()
@@ -55,7 +59,9 @@ class FeaturedViewController: UIViewController, UICollectionViewDataSource {
         }
         
 
-
+        
+        
+        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

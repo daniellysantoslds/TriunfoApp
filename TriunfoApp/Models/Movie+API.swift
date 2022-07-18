@@ -99,6 +99,40 @@ extension Movie {
     }
     
     
+    static func trendingDayMoviesAPI() async -> [Movie] {
+        
+        var components = Movie.urlComponentes
+        components.path = "/3/trending/movie/day"
+        components.queryItems = [
+            URLQueryItem(name: "api_key", value: Movie.apiKey)
+        ]
+        
+        let session = URLSession.shared
+        
+        do {
+        
+        let (data, response) = try await session.data(from: components.url!)
+            
+        let decoder = JSONDecoder()
+            decoder.keyDecodingStrategy = .convertFromSnakeCase
+            let movieResult = try decoder.decode(MovieResponse.self, from: data)
+            
+            return movieResult.results
+            
+        } catch {
+            print(error)
+        }
+        
+        return []
+        
+    }
+    
+    
+    
+    
+    
+    
+    
     
     
     
@@ -112,9 +146,6 @@ extension Movie {
     static func dowloadImageData(withPath : String) async -> Data {
         let urlString = "https://image.tmdb.org/t/p/w780\(withPath)"
         let url: URL = URL(string: urlString)!
-        
-        
-        
         let session = URLSession.shared
         session.configuration.requestCachePolicy = .returnCacheDataElseLoad
         
