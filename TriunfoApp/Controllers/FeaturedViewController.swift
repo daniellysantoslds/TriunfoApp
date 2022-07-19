@@ -10,6 +10,9 @@ import UIKit
 class FeaturedViewController: UIViewController, UICollectionViewDataSource {
     
 
+    @IBOutlet var popupalSeeAll: UIButton!
+    @IBOutlet var nowPlayingSeeAll: UIButton!
+    @IBOutlet var upcomingSeeAll: UIButton!
     
     var popularMovies: [Movie] = [] //Movie.popularMovies()
     var nowPlayingMovies: [Movie] = []//nowPlayingMovies()
