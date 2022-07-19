@@ -9,6 +9,7 @@ import UIKit
 
 class SeeAllViewController: UIViewController {
 
+    @IBOutlet var seeAllTableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
