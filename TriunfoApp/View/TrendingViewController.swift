@@ -25,7 +25,7 @@ class TrendingViewController: UIViewController {
         
         trendingTableView.dataSource = self
         trendingTableView.delegate = self
-    h
+    
     Task{
         self.trendingDayMovies = await Movie.trendingDayMoviesAPI()
         self.trendingTableView.reloadData()

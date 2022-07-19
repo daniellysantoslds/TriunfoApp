@@ -595,7 +595,6 @@
                                             <outlet property="dateLabel" destination="mJh-ty-kDS" id="FTX-fe-KSw"/>
                                             <outlet property="posterView" destination="lEl-Yk-npi" id="EnG-gg-1OE"/>
                                             <outlet property="titleLabel" destination="FnR-aD-5En" id="HzD-gs-daS"/>
-                                            <segue destination="n0o-Wx-rv8" kind="show" identifier="detailsSegue" id="v0b-qA-AK0"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -616,6 +615,7 @@
                     <navigationItem key="navigationItem" title="Trending " id="0BB-Cz-Q8c"/>
                     <connections>
                         <outlet property="trendingTableView" destination="PK0-01-ofT" id="opX-c1-rgi"/>
+                        <segue destination="n0o-Wx-rv8" kind="show" identifier="detailsSegue" id="4Rr-82-eF6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jya-9g-l4T" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -718,7 +718,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="v0b-qA-AK0"/>
+        <segue reference="4Rr-82-eF6"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="chevron.right" catalog="system" width="96" height="128"/>
