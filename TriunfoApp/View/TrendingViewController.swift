@@ -17,6 +17,7 @@ class TrendingViewController: UIViewController {
 
     
     @IBOutlet var trendingTableView: UITableView!
+//    @IBOutlet var trendingSegmented: UISegmentedControl!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,7 +25,7 @@ class TrendingViewController: UIViewController {
         
         trendingTableView.dataSource = self
         trendingTableView.delegate = self
-    
+    h
     Task{
         self.trendingDayMovies = await Movie.trendingDayMoviesAPI()
         self.trendingTableView.reloadData()

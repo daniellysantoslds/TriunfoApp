@@ -595,6 +595,7 @@
                                             <outlet property="dateLabel" destination="mJh-ty-kDS" id="FTX-fe-KSw"/>
                                             <outlet property="posterView" destination="lEl-Yk-npi" id="EnG-gg-1OE"/>
                                             <outlet property="titleLabel" destination="FnR-aD-5En" id="HzD-gs-daS"/>
+                                            <segue destination="n0o-Wx-rv8" kind="show" identifier="detailsSegue" id="v0b-qA-AK0"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -716,6 +717,9 @@
             <point key="canvasLocation" x="-349.27536231884062" y="2048.4375"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="v0b-qA-AK0"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="chevron.right" catalog="system" width="96" height="128"/>
         <image name="film" catalog="system" width="128" height="93"/>
