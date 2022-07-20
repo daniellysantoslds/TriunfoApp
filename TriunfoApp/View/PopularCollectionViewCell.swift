@@ -12,6 +12,12 @@ class PopularCollectionViewCell: UICollectionViewCell {
     static let cellIdentifier = "popularCell"
     
     @IBOutlet var imageView: UIImageView!
+       
+//imageView.layer.cornerRadius = 4
+   // imageView.clipsToBounds = true
+  
+    
+
     @IBOutlet var titleLabel: UILabel!
     
     func setup(title: String, image: UIImage) {

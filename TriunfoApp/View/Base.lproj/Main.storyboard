@@ -14,7 +14,7 @@
             <objects>
                 <viewController title="Featured" id="BYZ-38-t0r" customClass="FeaturedViewController" customModule="TriunfoApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="413" height="1226"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" directionalLockEnabled="YES" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FEF-6s-M7j">
@@ -707,7 +707,6 @@
         <!--Search-->
         <scene sceneID="Mwv-ZS-tmt">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="weg-8g-xSi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController title="Search" id="LYv-UU-CqP" customClass="SearchMoviesViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dzr-jx-eee">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -725,6 +724,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Search" largeTitleDisplayMode="always" id="rzZ-Ss-F46"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="weg-8g-xSi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="560.86956521739137" y="2048.4375"/>
         </scene>
@@ -813,7 +813,6 @@
         <!--Search-->
         <scene sceneID="v9Y-7v-8JM">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="bcS-cS-CK2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Rfc-Ic-1Qu" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Search" image="magnifyingglass" catalog="system" selectedImage="magnifyingglass" id="55G-vb-6xW"/>
                     <toolbarItems/>
@@ -836,6 +835,7 @@
                         <segue destination="LYv-UU-CqP" kind="relationship" relationship="rootViewController" id="J1Q-sQ-zwb"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bcS-cS-CK2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-349.27536231884062" y="2048.4375"/>
         </scene>
