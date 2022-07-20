@@ -13,4 +13,4 @@ In this app you can view movies by three categories: popular, now playing and up
 <h2>Preview</h2>
 
 
-
+<img src="https://user-images.githubusercontent.com/102704880/180059414-236e8edc-d881-494d-9e1b-48a67879cacc.gif"/>
