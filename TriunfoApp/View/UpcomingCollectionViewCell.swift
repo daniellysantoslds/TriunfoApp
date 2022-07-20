@@ -19,7 +19,9 @@ class UpcomingCollectionViewCell: UICollectionViewCell{
     func setup(title: String, year: String, image:UIImage){
         titleLabel.text = title
         dateLabel.text = year
-        imageView.image = image
+        self.imageView.image = image
+        self.imageView.image = image
+        self.imageView.layer.cornerRadius = 8
     }
     
     

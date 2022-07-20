@@ -19,7 +19,11 @@ class TrendingTableViewCell: UITableViewCell {
     
     func setup(title: String, image: UIImage, year: String){
         titleLabel.text = title
-        posterView.image = image
         dateLabel.text = year
+        self.posterView.image = image
+        self.posterView.layer.cornerRadius = 8
+
+        
+
     }
 }

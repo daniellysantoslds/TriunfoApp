@@ -13,8 +13,7 @@ class PopularCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet var imageView: UIImageView!
        
-//imageView.layer.cornerRadius = 4
-   // imageView.clipsToBounds = true
+   
   
     
 
@@ -22,8 +21,12 @@ class PopularCollectionViewCell: UICollectionViewCell {
     
     func setup(title: String, image: UIImage) {
         titleLabel.text = title
-        imageView.image = image
+        self.imageView.image = image
+        self.imageView.layer.cornerRadius = 8
+        
     }
+    
+   
 }
 
 
