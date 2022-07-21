@@ -1,17 +1,16 @@
 # TRFApp
 
-<h2>Descripition</h2>
+<h2>Descrição</h2>
 
-In this app you can view movies by three categories: popular, now playing and upcoming. By clicking on the films, you can also view their details, such as: description and note.
+<p>Neste aplicativo, você pode visualizar filmes em três categorias: populares, em exibição e futuros. Ao clicar nos filmes, você também pode visualizar seus detalhes, como: descrição e nota.</p>
 
-
-<h2> Development </h2>
-<p> In this challenge I was able to practice my knowledge in Swift language using Storyboard. Using UIKit and working with responsiveness. An API for displaying data was also implemented.
+<h2> Desenvolvimento </h2>
+<p> Neste desafio pude praticar meus conhecimentos na linguagem Swift utilizando o Storyboard com o UIKit. Uma API foi implementada para exibição de dados.
 </p>
 
 
 
 
-<h2>Preview</h2>
+<h2>Visualização</h2>
 
 <img src="https://user-images.githubusercontent.com/102704880/180059414-236e8edc-d881-494d-9e1b-48a67879cacc.gif"/>
