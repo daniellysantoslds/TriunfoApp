@@ -1,5 +1,5 @@
 # TRFApp
-Criando uma visualização de filmes mobile usando a linguagem Swift com Storyboard
+Criando uma visualização de filmes para mobile usando a linguagem Swift com Storyboard
 
 
 <h2>Descrição</h2>
